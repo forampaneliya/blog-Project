@@ -1,0 +1,131 @@
+<%- include ('header.ejs')%>
+
+    <head>
+        <style>
+            input {
+                color: white;
+            }
+        </style>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Corona Admin</title>
+        <!-- plugins:css -->
+        <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
+        <!-- endinject -->
+        <!-- Plugin css for this page -->
+        <link rel="stylesheet" href="../assets/vendors/jvectormap/jquery-jvectormap.css">
+        <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
+        <link rel="stylesheet" href="../assets/vendors/owl-carousel-2/owl.carousel.min.css">
+        <link rel="stylesheet" href="../assets/vendors/owl-carousel-2/owl.theme.default.min.css">
+        <!-- End plugin css for this page -->
+        <!-- inject:css -->
+        <!-- endinject -->
+        <!-- Layout styles -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <!-- End layout styles -->
+        <link rel="shortcut icon" href="../assets/images/favicon.png" />
+    </head>
+    <style>
+        .col-4 {
+            width: 40%;
+        }
+
+        .col-6 {
+            width: 60%;
+        }
+    </style>
+
+    <!-- partial -->
+    <div class="main-panel">
+        <div class="content-wrapper">
+
+            <div class="row" style="justify-content: center; align-items: center;">
+
+                <div class="col-5">
+                    <div class="single-blog-img">
+                        <img src="<%=singleBlog.blogImage %>" alt="" height="600" width="450"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-6">
+                   <div class="content" style="max-width: 500px;">
+                    <div class="heading" style="font-size: 40px; font-weight: 800;">
+                        <%= singleBlog.title %>
+                    </div>
+                    <div class="category" style="font-size: 24px; font-weight: 600; text-decoration: underline;">
+                        <%= singleBlog.category%> :-
+                    </div>
+                    <div class="description" style="font-size: 20px; color: rgb(206, 203, 203);">
+                        <%= singleBlog.desc%>
+                    </div>
+                    <br>
+
+                    <div class="blogger" style="font-size: 20px; color: rgb(206, 203, 203); text-align: right;" >
+                        -<%=singleBlog.author%>
+
+                    </div>
+                    <div class="blogger" style="font-size: 20px; color: rgb(206, 203, 203); text-align: right;" >
+                       <%= singleBlog.date%>
+                    </div>
+                   
+                   </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    <!-- content-wrapper ends -->
+    <!-- partial:../../partials/_footer.html -->
+    <footer class="footer">
+        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com
+                2020</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a
+                    href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin
+                    templates</a> from Bootstrapdash.com</span>
+        </div>
+    </footer>
+    <!-- partial -->
+    </div>
+    <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="../assets/vendors/select2/select2.min.js"></script>
+    <script src="../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../assets/js/off-canvas.js"></script>
+    <script src="../assets/js/hoverable-collapse.js"></script>
+    <script src="../assets/js/misc.js"></script>
+    <script src="../assets/js/settings.js"></script>
+    <script src="../assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="../assets/js/file-upload.js"></script>
+    <script src="../assets/js/typeahead.js"></script>
+    <script src="../assets/js/select2.js"></script>
+    <!-- End custom js for this page -->
+    </body>
+
+    </html>
