@@ -10,7 +10,6 @@ exports.loginPage=(req, res) => {
         return res.redirect("/blog")
     }
 }
-
 exports.checkloginn=async (req, res) => {
     let admin = await Admin.findOne({ email: req.body.email });
 
@@ -32,7 +31,6 @@ exports.checkloginn=async (req, res) => {
     }
 
 }
-
 exports.logoutt=(req,res)=>{
     res.clearCookie("admin")
     return res.redirect("/")
